@@ -1,0 +1,32 @@
+.videocard {
+  color: white;
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  transition: transform 100ms ease-in;
+}
+
+.videocard:hover {
+  transform: scale(1.09);
+}
+
+.videocard > img {
+  height: 300px;
+  object-fit: contain;
+  width: 300px;
+}
+
+.videocard > h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.videocard > .videocard__stats {
+  display: none;
+}
+
+.videocard:hover > .videocard__stats {
+  display: inline;
+}
